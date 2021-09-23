@@ -72,14 +72,44 @@
     }
 }
 .ex-11-icon:hover{
-    animation: spin270 2s linear infinite;
+    animation: spin270 1s linear infinite;
 }
 @keyframes spin270 {
     0% {transform: rotate(0deg);
     }
-    80% {transform: rotate(270deg);
+    90% {transform: rotate(270deg);
     }
     100%{transform:rotate(0)
     }
 }
+.ex-12-button:hover .ex-12-top-white{
+    animation: border-top-xspin 2s alternate;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: border-bottom-xspin 2s alternate;
+}
+
+@keyframes border-top-xspin {
+    0%{
+        left:10%;
+    }
+    50%{
+        left:calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+@keyframes border-bottom-xspin {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
 
